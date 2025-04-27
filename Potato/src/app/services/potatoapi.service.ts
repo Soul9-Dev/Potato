@@ -1,5 +1,8 @@
+
+// Service  |  requisito
+
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';  // importa aqui!
+import { HttpClient } from '@angular/common/http';  // <--
 
 
 @Injectable({
@@ -7,10 +10,12 @@ import { HttpClient } from '@angular/common/http';  // importa aqui!
 })
 export class PotatoApiService{
 
-  constructor(private http: HttpClient) { }  // injeta aqui!
+  constructor(private http: HttpClient) { }  
 
-  // exemplo de função para buscar dados de uma API
+  //função para buscar dados da API
   pegarDados() {
+
+                    //método get  |  requisito 
     return this.http.get('https://jsonplaceholder.typicode.com/posts');
   }
 }
