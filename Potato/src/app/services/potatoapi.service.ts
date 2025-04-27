@@ -1,5 +1,5 @@
 
-// Service  |  requisito
+// Service para alocar o uso do HttpClient  |  requisito
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';  // <--
